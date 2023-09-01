@@ -1,6 +1,3 @@
-/* Dejo algunas anotaciones para facilitar el encontrar las reglas que eh aplicado :)
-sientete libre de mover y de cambiar lo que veas necesario. */
-
 /* Reglas generales */
 * {
     margin: 0;
@@ -15,7 +12,6 @@ h2:first-of-type {
     font-weight: 700;
     line-height: 1.566;
     text-align: center;
-
 }
 
 /* Estilos para los perfiles */
@@ -44,54 +40,77 @@ h2:first-of-type {
 
 /* Estilos generales para los botones */
 button {
-    height: 2.75rem; 
-    width: 8.375rem; 
+    height: 2.75rem;
+    width: 8.375rem;
     padding: 0.625rem;
     border-radius: 3.125rem;
     margin-bottom: 3rem;
     background: #8B48BF;
     color: white;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Estilos para la sección "best teams of the year" */
 .more_info {
     background: #8B48BF;
-    padding: 3% 3%;
+    padding: 4% 4%;
     font-size: 4rem;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.more_info h2{
+.more_info h2, .more_info button {
     color: white;
 }
 
-.more_info button{
+.more_info button {
     background-color: white;
     color: #8B48BF;
 }
 
 /* Estilos para el pie de página */
-footer{
+footer {
     display: flex;
-    padding: 40px 0px;
+    padding: 3% 3%;
     flex-direction: column;
     align-items: center;
     background: #1E1E26;
 }
 
-footer h4, ul, a{
+footer h4, ul, a {
     color: white;
     font-size: 1rem;
     list-style: none;
     text-decoration: none;
+    font-weight: normal;
+}
+
+form input:first-of-type {
+    display: flex;
+    height: 4%;
+    width: 110%;
+    padding: 6%;
+    align-items: center;
+    border-radius: 50px;
+    background: #FFF;
+}
+
+form input {
+    display: flex;
+    width: 35%;
+    height: 4%;
+    padding: 7%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #8B48BF;
+    color: white;
 }
 
 /* Media Query para dispositivos móviles */
 @media (max-width: 700px) {
-
     .profile:first-child,
     .profile:nth-child(3) {
         display: none;
@@ -104,16 +123,23 @@ footer h4, ul, a{
         flex-direction: column;
     }
 
-    .more_info button{
+    .more_info button {
         margin-top: 2rem;
         background: #232C50;
+    }
+    
+    .more_info button {
         color: white;
     }
 
-    footer{
+    footer {
         display: flex;
-        padding: 8rem;
+        padding: 1rem;
         flex-direction: column;
         align-items: center;
+    }
+
+    form {
+        display: flex;
     }
 }
