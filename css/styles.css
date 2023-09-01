@@ -6,6 +6,23 @@
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+/* Estilos para el header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 12%;
+}
+
+li {
+    display: inline-block;
+    padding: .7rem;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 /* Estilos para la seccion "Best of the month" */
 h2:first-of-type {
     font-size: 2.451rem;
@@ -44,7 +61,7 @@ button {
     width: 8.375rem;
     padding: 0.625rem;
     border-radius: 3.125rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     background: #8B48BF;
     color: white;
     display: block;
@@ -111,6 +128,7 @@ form input {
 
 /* Media Query para dispositivos móviles */
 @media (max-width: 700px) {
+
     .profile:first-child,
     .profile:nth-child(3) {
         display: none;
