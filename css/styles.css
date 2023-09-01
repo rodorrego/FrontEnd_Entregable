@@ -1,0 +1,119 @@
+/* Dejo algunas anotaciones para facilitar el encontrar las reglas que eh aplicado :)
+sientete libre de mover y de cambiar lo que veas necesario. */
+
+/* Reglas generales */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: #242E53;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Estilos para la seccion "Best of the month" */
+h2:first-of-type {
+    font-size: 2.451rem;
+    font-weight: 700;
+    line-height: 1.566;
+    text-align: center;
+
+}
+
+/* Estilos para los perfiles */
+.profile_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 2rem;
+}
+
+.profile p {
+    color: #B9B9C1;
+}
+
+.profile img {
+    width: 3rem;
+    margin: 1rem;
+}
+
+/* Estilos generales para los botones */
+button {
+    height: 2.75rem; 
+    width: 8.375rem; 
+    padding: 0.625rem;
+    border-radius: 3.125rem;
+    margin-bottom: 3rem;
+    background: #8B48BF;
+    color: white;
+}
+
+/* Estilos para la sección "best teams of the year" */
+.more_info {
+    background: #8B48BF;
+    padding: 3% 3%;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more_info h2{
+    color: white;
+}
+
+.more_info button{
+    background-color: white;
+    color: #8B48BF;
+}
+
+/* Estilos para el pie de página */
+footer{
+    display: flex;
+    padding: 40px 0px;
+    flex-direction: column;
+    align-items: center;
+    background: #1E1E26;
+}
+
+footer h4, ul, a{
+    color: white;
+    font-size: 1rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 700px) {
+
+    .profile:first-child,
+    .profile:nth-child(3) {
+        display: none;
+    }
+
+    .more_info {
+        background: #3CDDF3;
+        padding: 8% 8%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .more_info button{
+        margin-top: 2rem;
+        background: #232C50;
+        color: white;
+    }
+
+    footer{
+        display: flex;
+        padding: 8rem;
+        flex-direction: column;
+        align-items: center;
+    }
+}
