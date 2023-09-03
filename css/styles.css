@@ -1,8 +1,3 @@
-/* Porfavor intenta no hacer reglas generales para las listas,
-despues al final vemos si podemos hacer alguna regla general para ahorrar
-espacio o no repetirnos, lo digo porque nos pisamos un monton si no. 
-pero no se que te parece, cualquier cosa escribeme a wsp*/
-
 /* Reglas generales */
 * {
     margin: 0;
@@ -11,12 +6,16 @@ pero no se que te parece, cualquier cosa escribeme a wsp*/
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Estilos para el header */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 4%; */
 }
 
 li {
@@ -92,8 +91,11 @@ button {
 
 /* Estilos para el pie de página */
 footer {
-    padding: 5% 5%;
     background: #1E1E26;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 1%;
 }
 
 footer h4, ul, a {
@@ -108,14 +110,15 @@ footer h4 {
     color: #8C8C94;
     font-size: small;
     margin: 3%;
-    position: relative;
 }
 
 form input:first-of-type {
     display: flex;
+    position: relative;
     width: 100%;
-    padding: 1%;
-    margin: 4%;
+    height: 23%;
+    padding: 3%;
+    margin: 15% 0 0 10%;
     align-items: center;
     border-radius: 50px;
     background: #FFF;
@@ -136,7 +139,10 @@ form input {
 footer .footer_nav ul {
     list-style: none;
     position: relative;
-    bottom: 3rem;
+    top: 1%;
+    right: 13%;
+    width: 80%;
+    margin: 2%;
     column-count: 2;
 }
 
@@ -144,9 +150,26 @@ footer .footer_nav ul li {
     width: 60%;
 }
 
+.logo {
+    position: relative;
+    right: 11.5%;
+    margin: 2%;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 10%;
+    height: auto;
+    position: relative;
+    top: 7rem;
+    right: 16rem;
+    margin: 2%;
+}
+
 /* Media Query para dispositivos móviles */
 @media (max-width: 700px) {
-
     .profile:first-child,
     .profile:nth-child(3) {
         display: none;
@@ -183,30 +206,25 @@ footer .footer_nav ul li {
     }
 
     .social_media {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
         width: 90%;
-        height: auto;
-        position: relative;
-        bottom: 2rem;
     }
 
     form input:first-of-type {
         width: 100%;
         height: 10%;
         padding: 3%;
+        margin: 15% 0 0 0;
     }
     
     form input {
         width: 25%;
         height: 10%;
         padding: 3%;
+        margin: 4%;
     }
 
     .logo {
         position: relative;
         bottom: 0.5rem;
     }
-    
 }
