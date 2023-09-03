@@ -1,3 +1,8 @@
+/* Porfavor intenta no hacer reglas generales para las listas,
+despues al final vemos si podemos hacer alguna regla general para ahorrar
+espacio o no repetirnos, lo digo porque nos pisamos un monton si no. 
+pero no se que te parece, cualquier cosa escribeme a wsp*/
+
 /* Reglas generales */
 * {
     margin: 0;
@@ -11,12 +16,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4% 12%;
+    /* padding: 4%; */
 }
 
 li {
     display: inline-block;
-    padding: .7rem;
+    padding: 0.7rem;
 }
 
 .mobile-menu {
@@ -59,9 +64,7 @@ h2:first-of-type {
 button {
     height: 2.75rem;
     width: 8.375rem;
-    padding: 0.625rem;
     border-radius: 3.125rem;
-    /* margin-bottom: 3rem; */
     background: #8B48BF;
     color: white;
     display: block;
@@ -130,13 +133,15 @@ form input {
     color: white;
 }
 
-footer nav {
-    display: flex;
-    flex-direction: column;
+footer .footer_nav ul {
+    list-style: none;
     position: relative;
-    bottom: 4rem;
-    width: 100%;
-    height: 100%;
+    bottom: 3rem;
+    column-count: 2;
+}
+
+footer .footer_nav ul li {
+    width: 60%;
 }
 
 /* Media Query para dispositivos móviles */
@@ -165,7 +170,6 @@ footer nav {
 
     footer {
         display: flex;
-        padding: 4rem;
         flex-direction: column;
         align-items: center;
     }
@@ -174,27 +178,35 @@ footer nav {
         display: flex;
         padding: 2rem;
         position: relative;
-        bottom: 4rem;
+        bottom: 2rem;
         width: 100%;
     }
 
     .social_media {
         display: flex;
+        flex-direction: row-reverse;
         justify-content: space-between;
-        width: 100%;
+        width: 90%;
         height: auto;
-        margin-bottom: 10%;
+        position: relative;
+        bottom: 2rem;
     }
 
     form input:first-of-type {
         width: 100%;
         height: 10%;
-        padding: 2%;
+        padding: 3%;
     }
     
     form input {
-        width: 30%;
+        width: 25%;
         height: 10%;
-        padding: 2%;
+        padding: 3%;
     }
+
+    .logo {
+        position: relative;
+        bottom: 0.5rem;
+    }
+    
 }
