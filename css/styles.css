@@ -12,20 +12,126 @@
 }
 
 /* Estilos para el header */
-nav {
+.header-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 5% 12%;
 }
 
-li {
-    display: inline-block;
-    padding: 0.7rem;
+.navbar-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.desktop-menu a:nth-child(-n + 5) {
+    color: #232851;
+    font-size: 1rem;
+}
+
+.navbar-button {
+    margin: 0;
 }
 
 .mobile-menu {
     display: none;
 }
+
+/* Estilos titulo */
+.title-container {
+    margin: 6% 12%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 28px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: right;
+}
+
+.title-text p {
+    text-align: right;
+    font-size: 1rem;
+}
+
+.title-text button {
+    margin: 0;
+}
+
+.title-container img {
+    height: 100%;
+}
+
+/* Estilos seccion "pro title" */
+.pros-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    background: #8B48BF;
+    padding: 1.5% 0;
+}
+
+.pros-title p, .pros-title h2 {
+    color: white;
+    width: 31%;
+}
+
+.pros-title h2 {
+    font-size: 2rem;
+}
+
+.pros-title p {
+    font-size: 1rem;
+}
+
+/* Estilos texto "different between pros" */
+.pros-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3% 0;
+    row-gap: 24px;
+    column-gap: 50px;
+}
+
+.pros-list div {
+    width: 42%;
+    display: flex;
+    gap: 23px;
+}
+
+.pros-list section {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.pros-list button {
+    padding: 10px 25px;
+}
+
+.pros-list h3 {
+    color: #232851;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.pros-list p {
+    color: #B9B9C1;
+    line-height: 2rem;
+}
+
+
 
 /* Estilos para la seccion "Best of the month" */
 h2:first-of-type {
@@ -185,6 +291,15 @@ footer .footer_nav ul li {
 
 /* Media Query para dispositivos móviles */
 @media (max-width: 700px) {
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
     .profile:first-child,
     .profile:nth-child(3) {
         display: none;
