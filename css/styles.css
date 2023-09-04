@@ -56,7 +56,7 @@ h2:first-of-type {
 }
 
 .profile img {
-    width: 3rem;
+    width: 4rem;
     margin: 1rem;
 }
 
@@ -75,7 +75,7 @@ button {
 .more_info {
     background: #8B48BF;
     font-size: 4rem;
-    padding:1rem;
+    padding:3.4rem;
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -85,7 +85,7 @@ button {
     width: 30%;
     height: 10%;
     text-align: left;
-    margin:3rem;
+    margin-left:5rem;
 }
 
 .more_info h2, .more_info button {
@@ -96,7 +96,7 @@ button {
     background-color: white;
     color: #8B48BF;
     position: relative;
-    margin:3rem;
+    margin-right:5rem;
 }
 
 /* Estilos para el pie de página */
@@ -192,18 +192,22 @@ footer .footer_nav ul li {
 
     .more_info {
         background: #3CDDF3;
-        padding: 8% 8%;
+        padding: 6%;
         text-align: center;
         flex-direction: column;
     }
 
-    .more_info button {
-        margin-top: 2rem;
-        background: #232C50;
+    .more_info h2 {
+        width: 50%;
+        text-align: center;
+        margin-left: 0%;
+        margin-bottom: 8%;
     }
-    
+
     .more_info button {
+        margin:0rem;
         color: white;
+        background: #232C50;
     }
 
     footer {
@@ -222,6 +226,9 @@ footer .footer_nav ul li {
 
     .social_media {
         width: 90%;
+        bottom: 7rem;
+        top: 0rem;
+        left: 0.5rem;
     }
 
     form input:first-of-type {
@@ -241,5 +248,11 @@ footer .footer_nav ul li {
     .logo {
         position: relative;
         bottom: 0.5rem;
+    }
+
+    footer h4 {
+        left: 20%;
+        top:0rem;
+        bottom: 1rem;
     }
 }
