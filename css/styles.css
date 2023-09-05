@@ -81,7 +81,8 @@ h1 {
     padding: 1.5% 0;
 }
 
-.pros-title p, .pros-title h2 {
+.pros-title p,
+.pros-title h2 {
     color: white;
     width: 31%;
 }
@@ -132,8 +133,11 @@ h1 {
 }
 
 
-
 /* Estilos para la seccion "Best of the month" */
+.botm_container {
+    padding: 8% 2% 13%;
+}
+
 h2:first-of-type {
     font-size: 2.451rem;
     font-weight: 700;
@@ -145,7 +149,7 @@ h2:first-of-type {
 .profile_container {
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    background-color: #FAFAFA;
 }
 
 .profile {
@@ -153,7 +157,7 @@ h2:first-of-type {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 1rem 2rem;
+    margin: 1rem 1rem;
 }
 
 .profile p {
@@ -181,20 +185,21 @@ button {
 .more_info {
     background: #8B48BF;
     font-size: 4rem;
-    padding:3.4rem;
+    padding: 3.4rem;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 }
 
 .more_info h2 {
     width: 30%;
     height: 10%;
     text-align: left;
-    margin-left:5rem;
+    margin-left: 5rem;
 }
 
-.more_info h2, .more_info button {
+.more_info h2,
+.more_info button {
     color: white;
 }
 
@@ -202,19 +207,26 @@ button {
     background-color: white;
     color: #8B48BF;
     position: relative;
-    margin-right:5rem;
+    margin-right: 5rem;
 }
 
 /* Estilos para el pie de página */
 footer {
     background: #1E1E26;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    padding: 3%;
+    padding: 3% 7%;
 }
 
-footer h4, ul, a {
+.footer-container {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 1%;
+}
+
+.footer-container h4,
+ul,
+a {
     color: white;
     font-size: 1rem;
     list-style: none;
@@ -222,71 +234,70 @@ footer h4, ul, a {
     font-weight: normal;
 }
 
-footer h4 {
+.footer-container h4 {
     color: #8C8C94;
     font-size: small;
     position: relative;
-    left: 80%;
-    top:5rem;
-    width: 35%;
+    left: 78%;
+    top: 7rem;
+    width: 23%;
     height: 1rem;
 }
 
-form input:first-of-type {
+form {
     display: flex;
     position: relative;
-    width: 100%;
-    height: 23%;
-    padding: 3%;
-    margin: 15% 0 0 10%;
-    align-items: center;
+    right: 5%;
+    bottom: 10%;
+    width: 30%;
+    height: 5%;
+}
+
+form input:first-of-type {
+    width: 70%;
+    padding: 5%;
+    margin: 0%;
     border-radius: 50px;
     background: #FFF;
 }
 
 form input {
-    display: flex;
-    width: 10%;
-    padding: 1.5%;
-    margin: 4%;
-    justify-content: center;
-    align-items: center;
+    width: 20%;
+    padding: 5%;
+    margin-left: 1%;
     border-radius: 50px;
     background: #8B48BF;
     color: white;
 }
 
-footer .footer_nav ul {
-    list-style: none;
+.footer_nav {
     position: relative;
-    top: 1%;
-    right: 13%;
-    width: 80%;
-    margin: 2%;
+    list-style: none;
+    width: 50%;
+    right: 5%;
     column-count: 2;
 }
 
-footer .footer_nav ul li {
-    width: 60%;
+footer .footer_nav li {
+    margin-bottom: 8%;
 }
 
 .logo {
+    display: block;
     position: relative;
-    right: 11.5%;
+    right: 12%;
     height: 0%;
-    margin: 2%;
 }
 
 .social_media {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    width: 10%;
+    width: 14%;
     height: 0%;
     position: relative;
     top: 7rem;
-    right: 16rem;
-    margin: 2%;
+    right: 20%;
 }
 
 /* Media Query para dispositivos móviles */
@@ -320,12 +331,12 @@ footer .footer_nav ul li {
     }
 
     .more_info button {
-        margin:0rem;
+        margin: 0rem;
         color: white;
         background: #232C50;
     }
 
-    footer {
+    .footer-containers {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -352,7 +363,7 @@ footer .footer_nav ul li {
         padding: 3%;
         margin: 15% 0 0 0;
     }
-    
+
     form input {
         width: 25%;
         height: 10%;
@@ -365,9 +376,9 @@ footer .footer_nav ul li {
         bottom: 0.5rem;
     }
 
-    footer h4 {
+    .footer-container h4 {
         left: 20%;
-        top:0rem;
+        top: 0rem;
         bottom: 1rem;
     }
 }
