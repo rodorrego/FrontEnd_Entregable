@@ -336,20 +336,30 @@ footer .footer_nav li {
         background: #232C50;
     }
 
-    .footer-containers {
+    .footer-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 36rem;
+    }
+
+    footer{
+        padding: 2% 5%;
     }
 
     form {
         display: flex;
-        padding: 2rem;
         position: relative;
-        bottom: 2rem;
+        top: 2rem;
+        left: 0.2rem;
         width: 100%;
     }
 
+    .footer_nav {
+        width: 100%;
+        left: 1%;
+    }
+    
     .social_media {
         width: 90%;
         bottom: 7rem;
@@ -358,27 +368,28 @@ footer .footer_nav li {
     }
 
     form input:first-of-type {
-        width: 100%;
-        height: 10%;
-        padding: 3%;
-        margin: 15% 0 0 0;
+        padding: 5.5%;
     }
 
     form input {
-        width: 25%;
-        height: 10%;
-        padding: 3%;
-        margin: 4%;
+        padding: 5.5%;
     }
 
     .logo {
         position: relative;
-        bottom: 0.5rem;
+        bottom: 1rem;
+        left: 0.3rem;
     }
 
     .footer-container h4 {
         left: 20%;
         top: 0rem;
         bottom: 1rem;
+    }
+
+    .footer-container h4 {
+        left: 5%;
+        top: -2rem;
+        width: 45%;
     }
 }
