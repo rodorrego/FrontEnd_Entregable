@@ -6,6 +6,17 @@
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+/* Estilos generales para los botones */
+button {
+    height: 2.75rem;
+    width: 8.375rem;
+    border-radius: 3.125rem;
+    background: #8B48BF;
+    color: white;
+    display: block;
+    margin: 0 auto;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -52,12 +63,12 @@
     flex-direction: column;
     align-items: end;
     gap: 28px;
-    font-weight: 700;
 }
 
 h1 {
     font-size: 3rem;
     text-align: right;
+    font-weight: 700;
 }
 
 .title-text p {
@@ -139,16 +150,14 @@ h1 {
     font-weight: 500;
 }
 
-
 /* Estilos para la seccion "Best of the month" */
 .botm_container {
-    padding: 8% 2% 13%;
+    padding: 4% 2% 12%;
 }
 
 h2:first-of-type {
     font-size: 2.451rem;
     font-weight: 700;
-    line-height: 1.566;
     text-align: center;
     margin: 3%;
 }
@@ -157,7 +166,6 @@ h2:first-of-type {
 .profile_container {
     display: flex;
     justify-content: space-between;
-    background-color: #FAFAFA;
 }
 
 .profile {
@@ -166,6 +174,7 @@ h2:first-of-type {
     align-items: center;
     text-align: center;
     margin: 1rem 1rem;
+    background-color: #FAFAFA;
 }
 
 .profile p {
@@ -177,39 +186,23 @@ h2:first-of-type {
 .profile img {
     width: 4rem;
     margin: 1rem;
-}
-
-/* Estilos generales para los botones */
-button {
-    height: 2.75rem;
-    width: 8.375rem;
-    border-radius: 3.125rem;
-    background: #8B48BF;
-    color: white;
-    display: block;
-    margin: 0 auto;
+    border-radius: 100%;
 }
 
 /* Estilos para la sección "best teams of the year" */
 .more_info {
-    background: #8B48BF;
-    font-size: 4rem;
-    padding: 3.4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2rem;
+    background: #8B48BF;
 }
 
 .more_info h2 {
-    width: 30%;
-    height: 10%;
-    text-align: left;
     margin-left: 5rem;
+    width: 30%;
+    text-align: left;
     font-weight: 700;
-}
-
-.more_info h2,
-.more_info button {
     color: white;
 }
 
@@ -223,7 +216,7 @@ button {
 /* Estilos para el pie de página */
 footer {
     background: #1E1E26;
-    padding: 3% 7%;
+    padding: 3%;
 }
 
 .footer-container {
@@ -234,14 +227,19 @@ footer {
     margin: 1%;
 }
 
-.footer-container h4,
-ul,
+.footer-container
+ul, li,
 a {
+    margin-bottom: 8%;
     color: white;
     font-size: 1rem;
+    font-weight: 200;
     list-style: none;
     text-decoration: none;
     font-weight: normal;
+    margin-bottom: 8%;
+    font-weight: 200;
+    margin-bottom: 8%;
 }
 
 .footer-container h4 {
@@ -264,9 +262,8 @@ form {
 }
 
 form input:first-of-type {
-    width: 70%;
+    width: 60%;
     padding: 5%;
-    margin: 0%;
     border-radius: 50px;
     background: #FFF;
 }
@@ -274,7 +271,7 @@ form input:first-of-type {
 form input {
     width: 20%;
     padding: 5%;
-    margin-left: 1%;
+    margin-left: 2%;
     border-radius: 50px;
     background: #8B48BF;
     color: white;
@@ -288,15 +285,6 @@ form input {
     column-count: 2;
 }
 
-footer .footer_nav li {
-    margin-bottom: 8%;
-}
-
-.footer_nav a {
-    font-weight: 200;
-}
-
-
 .logo {
     display: block;
     position: relative;
@@ -306,11 +294,11 @@ footer .footer_nav li {
 
 .social_media {
     display: flex;
+    position: relative;
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 14%;
     height: 0%;
-    position: relative;
     top: 7rem;
     right: 20%;
 }
@@ -333,8 +321,6 @@ footer .footer_nav li {
 
     .more_info {
         background: #3CDDF3;
-        padding: 6%;
-        text-align: center;
         flex-direction: column;
     }
 
@@ -342,7 +328,6 @@ footer .footer_nav li {
         width: 50%;
         text-align: center;
         margin-left: 0%;
-        margin-bottom: 8%;
     }
 
     .more_info button {
@@ -358,10 +343,6 @@ footer .footer_nav li {
         height: 36rem;
     }
 
-    footer{
-        padding: 2% 5%;
-    }
-
     form {
         display: flex;
         position: relative;
@@ -372,22 +353,19 @@ footer .footer_nav li {
 
     .footer_nav {
         width: 100%;
+        height: 40%;
         left: 1%;
     }
-    
+
+    .footer_nav a{
+        margin-bottom: 5%;
+    }
+
     .social_media {
         width: 90%;
         bottom: 7rem;
         top: 0rem;
         left: 0.5rem;
-    }
-
-    form input:first-of-type {
-        padding: 5.5%;
-    }
-
-    form input {
-        padding: 5.5%;
     }
 
     .logo {
@@ -397,14 +375,9 @@ footer .footer_nav li {
     }
 
     .footer-container h4 {
-        left: 20%;
-        top: 0rem;
-        bottom: 1rem;
-    }
-
-    .footer-container h4 {
-        left: 5%;
+        left: 3%;
         top: -2rem;
         width: 45%;
+        bottom: 1rem;
     }
 }
